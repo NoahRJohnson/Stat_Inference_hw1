@@ -1,8 +1,6 @@
 ---
 title: "Homework1"
-output: 
-  #html_document:
-  #toc: true
+output:
   pdf_document # needs latex
 ---
 
@@ -30,7 +28,7 @@ install_load("tidyverse")
    \item \textbf{The height of a likelihood curve is the probability of the data for the given parameter. The horizontal axis represents different possible parameter values. Does the area under the likelihood curve for an interval from .25 to .75 equal the probability that the true probability of a boy is between 0.25 and 0.75?}
    
    \begin{itemize}
-     \item No, the likelihood does not 
+     \item No, as stated the likelihood is the probability of the data for a certain parameter, not the probability of the parameter. So certainly the integral would not be a probability for a range of parameter values. However, while the likelihood curve is not a PDF, it seems intuitive that its integral should mean something. 
    \end{itemize}
  
 \end{itemize}
@@ -151,6 +149,6 @@ $$
 
 \item \textbf{Which of these four possibilities, $p_B = 0.45$, $p_B = 0.5$, $p_B = 0.55$, or $p_B = 0.5075$ would be the best estimate of $p_B$ given what we observed (our data)?}
 
-In MLE we always want to choose parameter values which maximize the probability of observing our data. Log is a strictly increasing function, so to maximize the likelihood, we should choose the maximum log likelihood value. Of the four $p_B$ possibilities, $p_B = 0.5075$ 
+In MLE we always want to choose parameter values which maximize the probability of observing our data. Log is a strictly increasing function, so to maximize the likelihood, we should choose the maximum log likelihood value. Of the four $p_B$ possibilities, $\hat{p_B} = 0.5075$ gives the largest log likelihood value, so it is our best estimate of $p_B$ given our data.
 
 \end{itemize}
