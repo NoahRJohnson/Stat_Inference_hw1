@@ -1,5 +1,6 @@
 ---
-title: "Homework1"
+title: "Homework 1"
+author: "Noah Johnson"
 output:
   pdf_document # needs latex
 ---
